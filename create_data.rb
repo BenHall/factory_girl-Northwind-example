@@ -29,3 +29,9 @@ puts c
 puts c['CategoryID']
 puts c['CategoryName']
 puts c['Description'] #nil - not sure why...
+
+c = Factory(:category, :CategoryName => 'name')
+puts c
+puts c.CategoryID
+puts c.CategoryName
+puts c.Description
